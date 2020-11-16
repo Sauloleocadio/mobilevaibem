@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {Alert, StyleSheet, Keyboard} from 'react-native';
+import {Alert, StyleSheet, Keyboard, LogBox} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {withNavigationFocus} from 'react-navigation';
 
@@ -21,6 +21,8 @@ import {
   ButtonAdd,
   List,
 } from './styles';
+
+LogBox.ignoreLogs(['Unrecognized WebSocket']);
 
 function Dashboard({navigation, isFocused}) {
   const [loading, setLoading] = useState(true);
