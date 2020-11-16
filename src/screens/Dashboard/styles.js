@@ -44,7 +44,7 @@ export const ButtonSearch = styled.TouchableOpacity`
 `;
 
 export const InputSearch = styled.TextInput.attrs({
-  placeholderTextColor: '#8b25c4',
+  placeholderTextColor: '#FFFFFF',
 })`
   flex: 1;
   font-size: 12px;

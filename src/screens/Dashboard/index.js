@@ -291,7 +291,7 @@ function Dashboard({navigation, isFocused}) {
                   autoCorrect={true}
                   value={search}
                   onChangeText={(text) => setSearch(text)}
-                  onSubmitEditing={() => handleSearch}
+                  onSubmitEditing={() => handleSearch()}
                 />
                 <ButtonInputSearch onPress={() => handleSearch()}>
                   <Icon name="search" size={25} color="#FFFFFF" />
