@@ -137,6 +137,7 @@ function Establishment({navigation}) {
           .then(function (response) {
             setLoading(false);
             Alert.alert('Registro salvo com sucesso!');
+            navigation.navigate('Dashboard');
           })
           .catch(function (error) {
             const errorStatus = error.response.status;
